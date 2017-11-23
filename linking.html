@@ -1,0 +1,104 @@
+<html>
+<head>
+<title> linking in the same page </title>
+</head>
+<body>
+	
+	<h1 id="top">Programming sockets in Java</h1>
+	<ul>
+		<li><a href="#MyClient">MyClient</a></li>
+		<li><a href="#Home">Home</a></li>
+		<li><a href="#Baby">Baby</a></li>
+	</ul>
+	
+		<br><br>
+		<p>In this section we will answer the most frequently asked questions about programming sockets in Java. <br>
+		Then we will show some examples of how to write client and server applications.<br></p>
+		<p><b>Note:</b> <br>
+			In this tutorial we will show how to program sockets in Java using the TCP/IP protocol only since it is more widely used than UDP/IP. 
+			<br>Also: All the classes related to sockets are in the java.net package, so make sure to import that package when you program sockets.</p>
+			
+			<p><br><i>How do I open a socket?</i><br>
+			If you are programming a client, then you would open a socket like this:</p>
+			
+			<p><br>Socket MyClient;</p>
+			
+			<h2 id="MyClient">MyClient</h2> = new Socket("Machine name", PortNumber);
+			
+				<p><br>Where Machine name is the machine you are trying to open a connection to, and PortNumber is the port (a number) on which the server you are trying 
+					to connect to is running. 
+				<br>When selecting a port number, you should note that port numbers between 0 and 1,023 are reserved for privileged users (that is, super user or root). 
+				<br>These port numbers are reserved for standard services, such as email, FTP, and HTTP. 
+				<br>When selecting a port number for your server, select one that is greater than 1,023!</p>
+				
+				
+				<p><br>In the example above, we didn't make use of exception handling, however, it is a good idea to handle exceptions. 
+				<br>(From now on, all our code will handle exceptions!)</p>
+				
+				<br><br>The above can be written as:
+					<br>Socket MyClient;
+						<br>try {
+							<br>MyClient = new Socket("Machine name", PortNumber);
+						<br>}
+						<br>catch (IOException e) {
+							<br>System.out.println(e);
+						<br>}
+
+				<br><br>If you are programming a server, then this is how you open a socket:
+					<br>ServerSocket MyService;
+						<br>try {
+							<br>MyServerice = new ServerSocket(PortNumber);
+						<br>}
+						<br>catch (IOException e) {
+							<br>System.out.println(e);
+						<br>}
+				<br><br>When implementing a server you also need to create a socket object from the ServerSocket in order to listen for and accept connections from clients.
+				
+				<br><h2 id="Home">home</h2>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br><h3 id="Baby">Baby</h3>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				
+ 	
+</body>
+</html>
