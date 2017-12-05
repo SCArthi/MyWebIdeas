@@ -1,0 +1,76 @@
+.x{
+	border-radius: 5px;
+	-moz-border: 5px;
+	-webkit-border:5px;
+	height: 30px;
+	padding-left: 10px;
+	text-decoration-color: black;
+}
+
+.y{
+	width: 350px;
+}
+
+.z{
+	border-radius: 10px;
+	-moz-border: 10px;
+	-webkit-border:10px;
+}
+
+*:focus {
+	outline:none;
+} 
+
+.uhub input:focus{ 
+    background: #fff;  
+    border:1px solid #555;  
+    box-shadow: 0 0 3px #aaa;  
+} 
+
+::-webkit-validation-bubble-message { 
+    padding: 1em; 
+} 
+
+.uhub input:focus:invalid{ 
+	/* when a field is considered invalid by the browser */ 
+    box-shadow: 0 0 5px #d45252; 
+    border-color: #b03535 
+}  
+
+.uhub input:required:valid { 
+	/* when a field is considered valid by the browser */ 
+    box-shadow: 0 0 5px #5cd053; 
+    border-color: #28921f; 
+} 
+
+.uhub input:focus + .form_hint{
+	display: inline;
+}
+
+
+.uhub input:required:valid + .form_hint::before{
+	color:#28921f;
+}
+
+.form_hint {
+	font-size: 12px;
+}
+
+.form_hint { 
+    background: blue; 
+    border-radius: 3px 3px 3px 3px; 
+    color: white; 
+    margin-left:8px; 
+    padding: 1px 6px; 
+    z-index: 999; /* hints stay above all other elements */ 
+    position: absolute; /* allows proper formatting if hint is two lines */ 
+    display: none; 
+}
+
+.form_hint::before { 
+    content: "\25C0"; /* left point triangle in escaped unicode */ 
+    color:blue; 
+    position: absolute; 
+    top:1px; 
+    left:-6px; 
+} 

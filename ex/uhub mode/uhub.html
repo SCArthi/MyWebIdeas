@@ -2,19 +2,16 @@
 <html>
 <head>
 <meta charset="utf-8">
-<!-- TemplateBeginEditable name="doctitle" -->
-<title> Facebook Login Page</title>
-<!-- TemplateEndEditable -->
-<!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
+<title> uHub Login Page</title>
+<link rel="stylesheet" media="screen" href="styles.css" >
 </head>
 
-<body>
+<body bgcolor="#98D3F9">
 	<form>
 		<table width="100%" border="0">
 			<tr bgcolor="darkblue">
-				<td>
-					<font face="Verdana" color="white" size="+4">Facebook </font> 
+				<td align="center">
+					<font face="Verdana" color="white" size="+4"> uhub </font> 
 					
 					<table border="0" width="40%" align="right">
 						<tr align="left">
@@ -23,8 +20,8 @@
 						</tr>
 							
 						<tr>
-							<td><input type="Email" name="Email"  placeholder="Email"></td>
-							<td><input type="password" name="pwd" placeholder="Password"></td>
+							<td><input type="Email" name="Email"  placeholder="Email" required=""></td>
+							<td><input type="password" name="pwd" placeholder="Password" required=""></td>
 							<td><input type="submit" name="submit" value="Login"></td>
 						</tr>
 						
@@ -41,14 +38,14 @@
 		</table>
 	</form>
 
-	<form>
-		<table width="100%" height="100%" border="0" bgcolor="#98D3F9">
+	<form class="uhub" action="" method="post" name="uhub">
+		<table width="100%" border="0" bgcolor="#98D3F9" >
 			<tr>
 				<td>
-					<font face="Verdana" color="darkblue" size="+2">Connect with the people around the world !!</font>
+					<font face="Verdana" color="darkblue" size="+2"> uhub helps you connect and <br> share with people in universities !!</font>
 					
-					<br>
-					<img src="images.jpg" width="500" height="300" align="left">
+					<br><br>
+					<img class="z" src="red-mundo-internet.jpg" width="600" height="400">
 					
 					<table width="40%" align="right">
 						<tr>
@@ -59,46 +56,49 @@
 						
 						<tr>
 							<td>
-								<font face="Verdana"  color="darkblue" size="+1">It's free and always will be.</font>
+								<font face="Verdana"  color="darkblue" size="+1">
+								It's free and always will be.</font>
 							</td>
 						</tr>
 						
 						<tr>
 							<td>
-								<input type="text" name="fname" placeholder="Firstname" required border-radious="2 2 2 2">
-								<input type="text" name="lname" placeholder="Lastname" required>
+								<input type="text" class="x" name="fname" placeholder="Firstname" required>
+								<input type="text" class="x" name="lname" placeholder="Lastname" required>
 							</td>
 						</tr>
 						
 						<tr>
 							<td>
-								<input type="email" name="email" placeholder="Email" required> 
+								<input type="email" class="x y" name="email" placeholder="Email" required> 
+								<span class="form_hint">Proper format "name@something.com"</span>
 							</td>
 						</tr>
 						
 						<tr>
 							<td>
-								<input type="email" name="email" placeholder="Re-enter email">
+								<input type="email" class="x y" name="email" placeholder="Re-enter email" required>
+								<span class="form_hint">Email address should be the same</span>
 							</td>
 						</tr>
 						
 						<tr>
 							<td>
-								<input type="password" name="email" placeholder="Password">
+								<input type="password" class="x y" name="pwd" placeholder="Password" required>
 							</td>
 						</tr>
 						
 						<tr>
 							<td>
-								<input type="date" name="date" placeholder="mm/dd/yyyy">
+								<input type="date" class="x" name="date" placeholder="mm/dd/yyyy" required>
 							</td>
 						</tr>
 						
 						<tr>
-							<td>
+							<td><font face="Verdana"  color="darkblue">
 								<input type="radio" name="gender">Male
 								<input type="radio" name="gender">Female
-							</td>
+							</font></td>
 						</tr>
 						
 						<tr>
@@ -110,7 +110,7 @@
 						
 						<tr>
 							<td>
-								<input type="submit" name="submit" value="SignUp">
+								<input type="image" class="z" src="sign-up-button-png-18.png" width="100" height="50">
 							</td>
 						</tr>
 					</table>
