@@ -1,44 +1,45 @@
 body{
-	background-image: url(IMG-20161102-WA0012.jpg);
+	background-image: url(keyboard.jpg);
 	background-size: cover;
 }
 
 #Table{
-	text-align: center;
+	text-align: center;	
 	border-style: double;
 	border-color: black;
 	font-size: 30px;
-	color: indigo;
+	color: black;
 }
 
 #all{
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
+	max-width: 100px;	
+}
+
+/*.days{
 	padding-left: 25px;
 	padding-right: 25px;
-	float: left;
-	max-width: 100%;
-	
-}
-
-.days{
-	padding-left: 50px;
-	padding-right: 50px;
 	align-content: center;
 	float: left;
-	width: 150px;
-	height: 200px;
+	width: 100px;
+	height: 500px;
 	margin: 5px;
-	background-image: url(Fire_Letters_Wallpapers_HD_3000X3000_A-F-1.jpg_A_display.jpg);
+	background-image: url(com.jpg);
 	background-size: cover;
-}
+}*/
 
-.day{
-	color: lightpink;
-	font-size: 25px;
+h2{	
+	color: #deb887;
+	font-size: 20px;
 	text-decoration: underline;
 }
 
+
 li{
-	font-size: 20px;
-	color: white;
-	text-shadow: 2px white;
+	color: black !important;
+	 font-size: 15px;
+	
+	
 }
