@@ -1,0 +1,25 @@
+ul{
+	list-style-type: none;
+	margin: 5px;
+	padding: 5px;
+	overflow: hidden;
+}
+
+a:link, a:visited{
+	display: block;
+	color: black;
+	background-color: #dcdcdc;
+	width: 143px;
+	text-align: center;
+	padding: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+a:hover, a:active{
+	background-color: #0000cd;
+}
+
+li{
+	float: left;
+}
