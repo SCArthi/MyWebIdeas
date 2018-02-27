@@ -4,7 +4,7 @@ body{
 
 nav{
 	width: 100%;
-	margin-top: 100px;
+	margin-top: 10px;
 	font-size: 15px;
 }
 
@@ -32,4 +32,38 @@ ul li a{
 	padding: 13px 25px;
 	color: black;
 	text-decoration: none;
+	display: inline-block;
+	background: linear-gradient(gray,white);
+	background: -moz-linear-gradient(gray,white);
+	background: -webkit-linear-gradient(gray,white);
 }
+
+ul li a:hover{
+	background: linear-gradient(blue,white);
+	background: -moz-linear-gradient(blue,white);
+	background: -webkit-linear-gradient(blue,white);
+}
+ul li:hover> ul{
+	visibility: visible;
+}
+
+ul ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	visibility: hidden;
+	position: absolute;
+	width: 180px;
+	border-top: 1px solid #fff;
+}
+
+ul ul li a{
+	padding: 9px 15px;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+	width: 150px;
+	border-bottom: 1px dotted #fff;
+}
+
