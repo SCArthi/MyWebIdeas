@@ -11,9 +11,18 @@ nav{
 
 ul{
 	margin: 0 auto;
-	overflow: hidden;
-	float: left;
-	width: 100;
+	list-style: none;
+	position: relative;
+	background: linear-gradient(gray,white);
+	background: -moz-linear-gradient(gray,white);
+	background: -webkit-linear-gradient(gray,white);
+}
+
+ul li a{
+	border-right: 1px dotted black;
+	padding: 13px 25px;
+	text-decoration: none;
+	display: block;
 	background: linear-gradient(gray,white);
 	background: -moz-linear-gradient(gray,white);
 	background: -webkit-linear-gradient(gray,white);
@@ -31,32 +40,7 @@ ul li{
 	float: left;
 	display: inline;
 	position: relative;
-}
-
-ul li a{
-	border-right: 1px dotted black;
-	padding: 13px 25px;
-	color: black;
-	text-decoration: none;
-	display: block;
-	background: linear-gradient(gray,white);
-	background: -moz-linear-gradient(gray,white);
-	background: -webkit-linear-gradient(gray,white);
-}
-
-ul li a:hover {
-	background: linear-gradient(blue,white);
-	background: -moz-linear-gradient(blue,white);
-	background: -webkit-linear-gradient(blue,white);
-}
-
-ul li:hover {
-	background: black;
-	transition: 0.9s;
-}
-
-ul li:hover> ul{
-	display: block;
+	list-style: none;
 }
 
 ul ul{
@@ -67,7 +51,27 @@ ul ul{
 	visibility: hidden;
 	position: absolute; top: 100%;
 	width: 180px;
-	border-top: 1px solid #fff;
+	border-top: 1px solid black;
+}
+
+ul li:hover> ul{
+	display: block;
+}
+
+ul li:hover {
+	background: black;
+	transition: 0.9s;
+}
+
+ul li:hover a{
+	background: linear-gradient(blue,white);
+	background: -moz-linear-gradient(blue,white);
+	background: -webkit-linear-gradient(blue,white);
+}
+
+ul ul li{
+	float: none;
+	position: relative;
 }
 
 ul ul li a{
@@ -76,7 +80,13 @@ ul ul li a{
 	text-decoration: none;
 	display: inline-block;
 	float: left;
-	width: 150px;
-	border-bottom: 1px dotted #fff;
+	width: 300px;
+	border-bottom: 1px dotted black;
+	text-align: left;
 }
 
+ul ul li a:hover {
+	background: blue;
+	color: grey;
+	transition: 0.9s;
+}
